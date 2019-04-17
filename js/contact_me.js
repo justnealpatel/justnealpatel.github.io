@@ -22,7 +22,7 @@ $(function() {
         url: "../mail/contact_me.php",
         type: "POST",
         headers: {
-          'Access-Control-Allow-Origin': '*'
+          'Access-Control-Allow-Origin': 'x-requested-with'
         },
         data: {
           name: name,
