@@ -22,11 +22,11 @@ $(function() {
       console.log(email);
       console.log(phone);
       console.log(message);
+
       $.ajax({
         url: "../mail/contact_me.php",
         type: "POST",
-        contentType: "application/json; charset=utf-8",
-        dataType: "json",
+        contentType: "application/x-www-form-urlencoded",
         data: {
           name: name,
           phone: phone,
